@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.encryptTool.controllers.MainController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="220.0">
+         <children>
+            <TabPane prefHeight="300.0" prefWidth="220.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                  <Tab text="Encrypt">
+                      <content>
+                          <fx:include source="encrypt.fxml" />
+                      </content>
+                  </Tab>
+                  <Tab text="Decrypt">
+                      <content>
+                          <fx:include source="decrypt.fxml" />
+                      </content>
+                  </Tab>
+                  <Tab text="Settings">
+                      <content>
+                          <fx:include source="settings.fxml" />
+                      </content>
+                  </Tab>
+
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="220.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.encryptTool.controllers.tabController.SettingsController">
+<children>
+    <BorderPane prefHeight="299.0" prefWidth="281.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                <children>
+                    <VBox alignment="CENTER" prefHeight="136.0" prefWidth="281.0">
+                        <children>
+                            <TextArea fx:id="keyArea" minHeight="-Infinity" prefHeight="90.0" prefWidth="281.0">
+                                <VBox.margin>
+                                    <Insets top="10.0" />
+                                </VBox.margin>
+                            </TextArea>
+                            <Label alignment="CENTER" contentDisplay="CENTER" text="Encryption Key">
+                                <padding>
+                                    <Insets top="4.0" />
+                                </padding>
+                            </Label>
+                        <Button fx:id="gen_key" alignment="CENTER" mnemonicParsing="false" text="Generate Key">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin></Button>
+                        </children>
+                    </VBox>
+                    <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="281.0">
+                        <children>
+                            <ComboBox fx:id="algorithmChoiceBox" minHeight="-Infinity" prefHeight="25.0" prefWidth="100.0">
+
+                                <HBox.margin>
+                                    <Insets left="10.0" />
+                                </HBox.margin>
+                            </ComboBox>
+                            <Label text="Algorithm">
+                                <HBox.margin>
+                                    <Insets left="10.0" />
+                                </HBox.margin></Label>
+                        </children>
+                        <VBox.margin>
+                            <Insets top="20.0" />
+                        </VBox.margin>
+                    </HBox>
+                    <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="281.0">
+                        <children>
+                        <ComboBox fx:id="threadsChoiceBox" minHeight="-Infinity" prefHeight="25.0" prefWidth="100.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                            <Label text="Threads">
+                                <HBox.margin>
+                                    <Insets left="10.0" />
+                                </HBox.margin>
+                            </Label>
+                        </children>
+                        <VBox.margin>
+                            <Insets top="10.0" />
+                        </VBox.margin>
+                    </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="del_files" mnemonicParsing="false" text="Delete Files after Operation">
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+                </children>
+            </VBox>
+        </center>
+    </BorderPane>
+</children></AnchorPane>

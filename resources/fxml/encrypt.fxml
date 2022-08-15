@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.encryptTool.controllers.tabController.EncryptionController">
+    <children>
+        <BorderPane prefHeight="299.0" prefWidth="281.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <Label text="Drop File or Folder" BorderPane.alignment="CENTER">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <BorderPane.margin>
+                        <Insets top="10.0" />
+                    </BorderPane.margin></Label>
+            </top>
+            <bottom>
+                <Button fx:id="startButton" mnemonicParsing="false" text="Start" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                    </BorderPane.margin></Button>
+            </bottom>
+            <center>
+                <VBox fx:id="fileDropBox" alignment="CENTER" blendMode="DARKEN" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: gray; -fx-border-insets: 10; -fx-border-width: 5; -fx-border-style: dashed;" BorderPane.alignment="CENTER" />
+            </center></BorderPane>
+    </children>
+</AnchorPane>

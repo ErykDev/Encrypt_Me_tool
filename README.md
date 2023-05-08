@@ -1,4 +1,4 @@
-## Encrypt_Me_Tool
+# Encrypt_Me_Tool
 Javafx based file encryption tool
 
 [![main window](/imgs/encrypt.png)]
